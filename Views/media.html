@@ -39,260 +39,197 @@
     <link rel="stylesheet" href="../Content/Styles/site.css" />
 </head>
 
-<body>
-  <div class="background-image toggle-image first-image show"></div>
-  <div class="background-image toggle-image second-image"></div>
-  <div class="background-image toggle-image third-image"></div>
-  <div class="background-image toggle-image fourth-image"></div>
-      <section class="hero h-100">
+<body class="black-bg-radial">
+      <section class="hero">
 
         <!-- NAVIGATION -->
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm topnav" id="myTopnav">
-                <div class="container-fluid">
-                    <a href="../Views/index.html"><img class="navbar-brand" src="../Content/Assets/Images/miri-logo-official.png"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-md-inline-flex">
-                        <ul class="navbar-nav justify-content-end flex-grow-1">
-                            <li class="nav-item text-right">
-                                <a href="../Views/index.html" class="nav-link">Home</a>
-                            </li>
-                            <!-- <li class="nav-item text-right">
-                                <a href="../Views/studio.html" class="nav-link">The Studio</a>
-                            </li> -->
-                            <li class="nav-item dropdown text-right">
-                              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">About Us</a>
-                              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item text-right" href="#">The Studio</a>
-                                <a class="dropdown-item text-right" href="#">Our Team</a>
-                              </div>
-                            </li>
-                            <li class="nav-item text-right">
-                                <a href="../Views/services.html" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item text-right">
-                                <a href="../Views/production.html" class="nav-link">Live Sessions</a>
-                            </li>
-                            <!-- <li class="nav-item text-right">
-                                <a href="../Views/team.html" class="nav-link">Our Team</a>
-                            </li> -->
-                            <li class="nav-item text-right">
-                                <a href="https://square.site/book/0ARDB2463W33Z/miri-music-arvada-co" target="_blank"
-                                    rel="nofollow" class="nav-link">Bookings</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<header class="black-bg">
+  <nav class="navbar navbar-expand-md navbar-toggleable-md topnav" id="myTopnav">
+              <div class="container-fluid">
+                  <a href="../Views/index.html"><img class="navbar-brand" src="../Content/Assets/Images/miri-logo-official.png"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                  </button>
+                  <div class="navbar-collapse collapse d-md-inline-flex">
+                      <ul class="navbar-nav justify-content-end flex-grow-1">
+                          <li class="nav-item text-right">
+                              <a href="../Views/index.html" class="nav-link">Home</a>
+                          </li>
+                          <!-- <li class="nav-item text-right">
+                              <a href="../Views/studio.html" class="nav-link">The Studio</a>
+                          </li> -->
+                          <li class="nav-item dropdown text-right">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">About Us</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item text-right" href="../Views/studio.html">The Studio</a>
+                              <a class="dropdown-item text-right" href="../Views/team.html">Our Team</a>
+                            </div>
+                          </li>
+                          <li class="nav-item text-right">
+                              <a href="../Views/services.html" class="nav-link">Services</a>
+                          </li>
+                          <li class="nav-item text-right">
+                              <a href="../Views/media.html" class="nav-link">Live Sessions</a>
+                          </li>
+                          <!-- <li class="nav-item text-right">
+                              <a href="../Views/team.html" class="nav-link">Our Team</a>
+                          </li> -->
+                          <li class="nav-item text-right">
+                              <a href="https://square.site/book/0ARDB2463W33Z/miri-music-arvada-co" target="_blank"
+                                  rel="nofollow" class="nav-link">Bookings</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
         </header>
+        <section class=" row margin-left-0 margin-right-0 free-session-banner align-items-center">
+          <div class="col home-layout text-center mx-auto py-4">
+            <h4>Win a free Miri music session</h4>
+            <div>Like what you see? Every month, we choose one band to perform as a featured Miri Music live session artist — completely free of charge. Enter your band to be chosen and win a live filmed video performance in the Miri Music studio free of charge!
+            </div>
+            <button type="button" class="btn btn-secondary d-block mx-auto mt-3" data-toggle="modal" data-target="#contactModal">Enter Now</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content px-15px">
+                  <section class="row margin-left-0 margin-right-0 align-items-center">
+                      <div class="col text-center mx-auto py-4">
+                          <!--Section heading-->
+                          <h2 class="pink-header py-2 text-center">Free Miri Music Session</h2>
+                          <!--Section description-->
+                          <div class="text-center black-text mx-auto mb-5">
+                            Let us know why you want to win a free Miri Music Session in the space below.
+                          </div>
+
+                          <div class="row">
+                            <script type=”text/javascript”>window.submitted=false; window.returnLoc=window.location.href</script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) {
+                              window.location='/Views/thank-you.html';}"></iframe>
+                              <!--Grid column-->
+                              <div class="col-md-12 mb-md-0 mb-5">
+                                <form id="contact-form" name="contact-form"
+                                action="https://docs.google.com/forms/d/e/1FAIpQLSfB6QCT9544AQucy3BjubA5cPyvyylsXETnMLldMYMdpfVc1g/formResponse" method="POST"
+                                target="hidden_iframe" onsubmit="window.submitted=true;">
+
+
+                                      <!--Grid row-->
+                                      <div class="row">
+
+                                          <!--Grid column-->
+                                          <div class="col-md-6">
+                                              <div class="md-form mb-0">
+                                                  <input type="text" id="name" name="entry.399286961" class="form-control">
+                                                  <label for="name" class="">Name</label>
+                                              </div>
+                                          </div>
+                                          <!--Grid column-->
+
+                                          <!--Grid column-->
+                                          <div class="col-md-6">
+                                              <div class="md-form mb-0">
+                                                  <input type="text" id="email" name="emailAddress" class="form-control">
+                                                  <label for="email" class="">Email</label>
+                                              </div>
+                                          </div>
+                                          <!--Grid column-->
+
+                                      </div>
+                                      <!--Grid row-->
+
+                                      <!--Grid row-->
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="md-form mb-0">
+                                                  <input type="text" id="subject" name="entry.1041146486" class="form-control">
+                                                  <label for="subject" class="">Band/Project Name</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!--Grid row-->
+
+                                      <!--Grid row-->
+                                      <div class="row">
+
+                                          <!--Grid column-->
+                                          <div class="col-md-12">
+
+                                              <div class="md-form">
+                                                  <textarea type="text" id="message" name="entry.625829707" rows="2"
+                                                      class="form-control md-textarea"></textarea>
+                                                  <label for="message">Tell us about your project</label>
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                      <!--Grid row-->
+                                      <div class="row">
+
+                                          <!--Grid column-->
+                                          <div class="col-md-12">
+
+                                              <div class="md-form mb-0">
+                                                  <input type="text" required id="b"
+                                                      class="form-control md-textarea"></input>
+                                                  <label for="captcha">Solve: <span id="a"></span></label>
+                                              </div>
+                                              <div class="text-left font-small black-header">(We just want to make sure you're not a robot)</div>
+
+                                          </div>
+                                      </div>
+                                      <div class="row">
+
+                                          <!--Grid column-->
+                                          <div class="col-md-12">
+                                            <div class="md-form">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="submit" class="btn btn-primary" id="miriSessionSubmit" disabled>Submit</button>
+        </div>
+        </div>
+        </div>
+                                  </form>
+
+
+                              </div>
+                              <!--Grid column-->
+
+                          </div>
+                      </div>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- HERO -->
-        <div class="hero-inner h-100">
-            <div class="col pt-3">
-              <img class="d-block mx-auto miri-text-img" src="../Content/Assets/Images/MiriText.png">
-                <!-- <h1 class="text-center">Miri Music</h1> -->
-                <h5 class="text-center">
-                    Let’s make something you are going to love.</h5>
-                <br>
-                <button onclick="book()" type="button" class="btn btn-primary d-block mx-auto" rel="nofollow">Book The
-                    Studio</button>
-                <a href="#abt"><svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80"
-                        height="100" viewBox="0 0 172 172" style=" fill:#000000;">
-                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <path d="M0,172v-172h172v172z" fill="none"></path>
-                            <g fill="#ffffff">
-                                <path
-                                    d="M85.6775,27.4125c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v101.5875l-31.605,-31.605c-0.645,-0.68531 -1.53187,-1.06156 -2.4725,-1.075c-1.3975,0.01344 -2.64719,0.86 -3.17125,2.16344c-0.51062,1.29 -0.20156,2.78156 0.80625,3.74906l37.41,37.5175l2.4725,2.365l2.4725,-2.365l37.41,-37.5175c1.02125,-0.83312 1.49156,-2.16344 1.19594,-3.45344c-0.29562,-1.27656 -1.30344,-2.28438 -2.58,-2.58c-1.29,-0.29563 -2.62031,0.17469 -3.45344,1.19594l-31.605,31.605v-101.5875c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg></a>
-            </div>
-        </div>
-    </section>
+        <div class="container py-5">
+          <section class="row margin-left-0 margin-right-0">
+            <div class="col home-layout text-center mx-auto">
+            </section>
 
-    <!-- ABOUT -->
-    <section id="abt" class="row margin-left-0 margin-right-0 abt-home-section align-items-center">
-        <div class="col home-layout text-center mx-auto">
-            <h5>Miri Music is a full-service recording studio in Colorado's Denver Metro Area
-                which provides professional and affordable recording, mixing,
-                mastering and production in a welcoming, creative atmosphere.</h5>
-        </div>
-    </section>
+          <h2 class="black-header">Big Dopes</h2>
+          <div class="embed-responsive embed-responsive-16by9 box-shadow my-3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e7mzY2CLn3o" allowfullscreen></iframe>
+          </div>
+          <div class="py-2">Big Dopes' loose, lighthearted feel evokes 90s alternative and indie. Lead songwriter Eddie Schmid uses a playful, conversational vocal style to sing through neuroses about long-distance relationships, being a houseguest, and wasting money on shitty headphones. Ricky Brewer (drums) and Justin Catanzaro (bass) lend vibrant, dynamic rhythms, and Paul Simmons adds colorful violin, guitar, and synth. </div>
+          <!-- <br>
+          <div class="d-block mx-auto my-4">
+          <h6>Like what you see? Book a session now</h6>
+          <a href="https://square.site/book/0ARDB2463W33Z/miri-music-arvada-co" target="_blank" class="btn btn-primary" rel="nofollow">Book The Studio</a>
 
-    <!-- ABOUT -->
-    <section class="row margin-left-0 margin-right-0">
-        <div class="col-xs-12 col-sm-6 col-lg-3 text-center serv-section recording">
-          <a href="../Views/services.html#recording">
-            <h4 class="pt-5 pb-2">Recording</h4>
-            <div class="fw-400 pb-5">
-                We have built a customized space with the artist in mind so you can unleash the musical sleeping giants
-                within you.
-            </div></a>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-3 text-center serv-section mixing">
-          <a href="../Views/services.html#mixing" >
-            <h4 class="pt-5 pb-2">Mixing</h4>
-            <div class="fw-400 pb-5">
-                No matter the system, our team will engineer punchier kicks, thicker bass, dreamier guitars, and vocals
-                that break hearts.
-            </div></a>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-3 text-center serv-section mastering">
-          <a href="../Views/services.html#mastering">
-            <h4 class="pt-5 pb-2">Mastering</h4>
-            <div class="fw-400 pb-5">
-                Our team will transform your album or single into a full-bodied and cohesive master that is ready to
-                distribute.
-            </div>
-            </a>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-lg-3 text-center serv-section live-videos">
-          <a href="../Views/services.html#live-videos">
-            <h4 class="pt-5 pb-2">Live Videos</h4>
-            <div class="fw-400 pb-5">
-                Our expert videographers will make you look hot as hell with live film session customized around your
-                vibe.
-            </div>
-          </a>
-        </div>
-
-    </section>
-
-    <section class="row margin-left-0 margin-right-0 h-50">
-        <div class="col text-center pt-5 mx-auto">
-            <h2 class="pink-header py-5 text-center">Artists We Love</h2>
-            <div class="customer-logos slider">
-                <div class="slide"><a href='http://www.big-dopes.com/'><img class="box-shadow" src="../Content/Assets/Images/big-dopes.png"></a><h6 class="pt-2">Big Dopes</h6></div>
-                <div class="slide"><a href='http://tylerimbreyband.com/#about'><img class="box-shadow" src="../Content/Assets/Images/ghost-revue.png"></a><h6 class="pt-2">Ghost Revue</h6></div>
-                <div class="slide"><a href='http://oxeyedaisymusic.com/'><img class="box-shadow" src="../Content/Assets/Images/oxeye-2.png"></a><h6 class="pt-2">Oxeye Daisy</h6></div>
-                <div class="slide"><a href='https://babelord.bandcamp.com/'><img class="box-shadow" src="../Content/Assets/Images/babelord.png"></a><h6 class="pt-2">Babelord</h6></div>
-                <div class="slide"><a href='https://www.hellomountainband.com/'><img class="box-shadow" src="../Content/Assets/Images/hello-mountain.png"></a><h6 class="pt-2">Hello, Mountain</h6></div>
-                <div class="slide"><a href='https://nuancer.bandcamp.com/'><img class="box-shadow" src="../Content/Assets/Images/nuancer.png"></a><h6 class="pt-2">Nuancer</h6></div>
-                <div class="slide"><a href='http://oxeyedaisymusic.com/'><img class="box-shadow" src="../Content/Assets/Images/oxeye-daisy.png"></a><h6 class="pt-2">Oxeye Daisy</h6></div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--Section: Contact v.2-->
-    <section class="row margin-left-0 margin-right-0 align-items-center py-5">
-        <div class="col home-layout text-center mx-auto py-xl-5">
-            <!--Section heading-->
-            <h2 class="pink-header pt-xl-5 pb-2 mt-xl-5 text-center">Contact Us</h2>
-            <!--Section description-->
-            <div class="text-center mx-auto mb-5">
-                Any questions about how we would handle your project?
-                Wanna know more about pricing?
-                Interested in filming a live in-studio session with us?
-                Looking for love in all the wrong places?
-                Don’t be shy. Give us a shout! Let us help you make music you’re proud of.
-            </div>
-
-            <div class="row">
-            <script type=”text/javascript”>window.submitted=false; window.returnLoc=window.location.href</script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) {
-              window.location='/Views/thank-you.html';}"></iframe>
-                <!--Grid column-->
-                <div class="col-md-12 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form"
-                    action="https://docs.google.com/forms/d/e/1FAIpQLSceGnC7m6cqyn4JweIIaOfslcE4clFp3rqyKDCGmtTqCZwTng/formResponse" method="POST"
-                    target="hidden_iframe" onsubmit="window.submitted=true;">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" required id="name" name="entry.1850071100" class="form-control">
-                                    <label for="name" class="">Name</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" required id="email" name="emailAddress" class="form-control">
-                                    <label for="email" class="">Email</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" required id="subject" name="entry.2115904666" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" required id="message" name="entry.599387703" rows="3"
-                                        class="form-control md-textarea"></textarea>
-                                    <label for="message">Your Message</label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form mb-0">
-                                    <input type="text" required id="b"
-                                        class="form-control md-textarea"></input>
-                                    <label for="captcha">Solve: <span id="a"></span></label>
-                                </div>
-                                <div class="text-left font-small">(We just want to make sure you're not a robot)</div>
-
-                            </div>
-                        </div>
-
-                        <!--Grid row-->
-
-                        <div class="text-center float-right text-md-left">
-                            <button type="submit" class="btn btn-primary" id="contactSubmit" disabled>Send</button>
-                        </div>
-                    </form>
-
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-        </div>
-    </section>
-
+        </div> -->
+          <!-- <h6 class="black-header pt-2">0:10- Shoulder Chips</h6>
+          <h6 class="black-header pt-2">3:09- Neurotic Generosity</h6>
+          <h6 class="black-header pt-2">6:40- Mia</h6> -->
+</div>
+</section>
 
     <!-- Footer -->
-    <br>
     <!-- Footer -->
     <footer class="page-footer font-small black-bg">
 
